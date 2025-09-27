@@ -38,10 +38,10 @@ await dbConnect().then(() => {
     app.get("/", (req, res) => {
         res.send("Hello, World!");
     });
-    /*
+    
     setInterval(async() => {
-        await fetch(`https://project-storyteller-backend.onrender.com/api/v1/users/health`,{method:"GET"});
+        await fetch(`https://kem-horlicks-server.onrender.com/api/v1/horlicks/health`,{method:"GET"});
     }, 14 * 60 *1000);
-    */
+    
     
 });

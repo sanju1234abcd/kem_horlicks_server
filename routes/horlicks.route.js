@@ -5,5 +5,8 @@ const horlicksRouter = express.Router()
 
 horlicksRouter.post("/add", addHorlicksSales );
 horlicksRouter.get("/get", getHorlicksSales );
+horlicksRouter.get("/health",async(req,res)=>{
+    res.status(200).json({success:true, message:"Healthy"})
+})
 
 export default horlicksRouter ;
