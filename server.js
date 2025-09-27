@@ -41,7 +41,7 @@ await dbConnect().then(() => {
     
     setInterval(async() => {
         await fetch(`https://kem-horlicks-server.onrender.com/api/v1/horlicks/health`,{method:"GET"});
-    }, 10 *1000);
+    }, 14 * 60 *1000);
     
     
 });
