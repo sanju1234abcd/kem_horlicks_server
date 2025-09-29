@@ -12,9 +12,9 @@ export const addHorlicksSales = async(req,res)=>{
         const horlicksSale1 = Number(horlicksSale)
         const water500mlSale1 = Number(water500mlSale)
         const water1000mlSale1 = Number(water1000mlSale)
-        horlicksData.horlicksSale += horlicksSale1
-        horlicksData.water500mlSale += water500mlSale1
-        horlicksData.water1000mlSale += water1000mlSale1
+        horlicksData.horlicksSale = horlicksSale1
+        horlicksData.water500mlSale = water500mlSale1
+        horlicksData.water1000mlSale = water1000mlSale1
         await horlicksData.save({validateBeforeSave:false})
         res.status(200).json({success:true,data:horlicksData})
     }
